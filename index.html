@@ -31,8 +31,8 @@
 
                 <!-- nav -->
                 <div class="main-nav txt-cen ptb-1rem mb-1rem blu-bord">
-                    <input type="text" placeholder="Add task">
-                    <button>Add</button>
+                    <input @keyup.enter="addItem(task)" id="add-btn" v-model="task" type="text" placeholder="Add task">
+                    <button @click="addItem(task)">Add</button>
                 </div>
 
                 <!-- to-do list -->
