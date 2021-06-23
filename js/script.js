@@ -18,6 +18,7 @@ const app = new Vue(
                 this.tasks.splice(index, 1);
             },
             addItem(element){
+
                 if(element != null && !this.tasks.includes(element)){
                     this.tasks.push(element);
                 } else if(element == null){
@@ -25,7 +26,11 @@ const app = new Vue(
                 } else if(this.tasks.includes(element)){
                     alert('You already added this task!!');
                 }
+                this.task = null;
+                
             }
         }
     }
 );
+
+let task = null;
