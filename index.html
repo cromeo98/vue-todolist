@@ -18,10 +18,10 @@
 <body>
 
     <div id="root">
-        <div class="container h-100vh red-bord">
+        <div class="container h-100vh">
             <!-- header (logo) -->
             <header>
-                <div class="logo-container txt-cen ptb-1rem w-75x m-auto mb-1rem blu-bord">
+                <div class="logo-container txt-cen ptb-1rem w-75x m-auto mb-1rem">
                     <img id="logo" class="w-50x" src="https://www.boolean.careers/images/misc/logo.png" alt="logo boolean">
                 </div>
             </header>
@@ -30,13 +30,13 @@
             <main>
 
                 <!-- nav -->
-                <div class="main-nav txt-cen ptb-1rem mb-1rem blu-bord">
+                <div class="main-nav txt-cen ptb-1rem mb-1rem">
                     <input @keyup.enter="addItem(task)" id="add-btn" v-model="task" type="text" placeholder="Add task">
                     <button @click="addItem(task)">Add</button>
                 </div>
 
                 <!-- to-do list -->
-                <div class="to-do-list ptb-1rem blu-bord">
+                <div class="to-do-list ptb-1rem">
                     
                 <template v-if="tasks.length > 0">
                     <ul class="ms_my-main-list clear-fix">
