@@ -37,12 +37,20 @@
 
                 <!-- to-do list -->
                 <div class="to-do-list ptb-1rem blu-bord">
+                    
+                <template v-if="tasks.length > 0">
                     <ul class="ms_my-main-list clear-fix">
                         <li v-for="(task, index) in tasks">
                             {{task}}
                             <i @click="removeItem(index)" class="far fa-times-circle"></i>
                         </li>
                     </ul>
+                </template>   
+                <template v-else>
+                    <h1>Add a task!</h1>
+                </template> 
+
+                    
                 </div>
             </main>
 
