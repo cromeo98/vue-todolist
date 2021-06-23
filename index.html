@@ -7,6 +7,8 @@
     <title>Document</title>
     <!-- link to my css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- linnk to my framework -->
+    <link rel="stylesheet" href="css/framework.css">
     <!-- link to vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <!-- link to fontAwesome -->
@@ -14,6 +16,36 @@
 
 </head>
 <body>
+
+    <div id="root">
+        <div class="container h-100vh red-bord">
+            <!-- header (logo) -->
+            <header>
+                <div class="logo-container txt-cen ptb-1rem w-75x m-auto mb-1rem blu-bord">
+                    <img id="logo" class="w-50x" src="https://www.boolean.careers/images/misc/logo.png" alt="logo boolean">
+                </div>
+            </header>
+
+            <!-- main -->
+            <main>
+
+                <!-- nav -->
+                <div class="main-nav txt-cen ptb-1rem mb-1rem blu-bord">
+                    <input type="text" placeholder="Add task">
+                    <button>Add</button>
+                </div>
+
+                <!-- to-do list -->
+                <div class="to-do-list ptb-1rem blu-bord">
+                    <ul class="ms_my-main-list clear-fix">
+                        <li>task 1<i class="far fa-times-circle"></i></li>
+                        <li>task 2<i class="far fa-times-circle"></i></li>
+                    </ul>
+                </div>
+            </main>
+
+        </div>    
+    </div>
     
     <!-- link to my script -->
     <script type="text/javascript" src="js/script.js"></script>

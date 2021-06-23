@@ -1,5 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-nav input, .main-nav button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.ms_my-main-list{
+
+}
+
+.ms_my-main-list > li{
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.ms_my-main-list > li:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.ms_my-main-list > li > i{
+    float: right;
+}
+
+.clear-fix::before{
+    content: '';
+    display: table;
+    clear: both;
 }
