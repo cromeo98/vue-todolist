@@ -38,8 +38,10 @@
                 <!-- to-do list -->
                 <div class="to-do-list ptb-1rem blu-bord">
                     <ul class="ms_my-main-list clear-fix">
-                        <li>task 1<i class="far fa-times-circle"></i></li>
-                        <li>task 2<i class="far fa-times-circle"></i></li>
+                        <li v-for="(task, index) in tasks">
+                            {{task}}
+                            <i @click="removeItem(index)" class="far fa-times-circle"></i>
+                        </li>
                     </ul>
                 </div>
             </main>

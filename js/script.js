@@ -7,10 +7,16 @@ const app = new Vue(
     {
         el: '#root',
         data:{
-
+            tasks:[
+                'task1',
+                'task2',
+                'task3'
+            ]
         },
         methods:{
-            
+            removeItem(index){
+                this.tasks.splice(index, 1);
+            }
         }
     }
 );
