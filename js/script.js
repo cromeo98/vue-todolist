@@ -11,7 +11,9 @@ const app = new Vue(
                 'task1',
                 'task2',
                 'task3'
-            ]
+            ],
+            task: null
+
         },
         methods:{
             removeItem(index){
@@ -33,4 +35,3 @@ const app = new Vue(
     }
 );
 
-let task = null;
