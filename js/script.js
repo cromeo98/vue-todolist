@@ -19,9 +19,9 @@ const app = new Vue(
             },
             addItem(element){
 
-                if(element != null && !this.tasks.includes(element)){
+                if(element != null && !this.tasks.includes(element) && element != ' ' && element != ''){
                     this.tasks.push(element);
-                } else if(element == null){
+                } else if(element == null || element != ' ' || element != ''){
                     alert('Add a task!');
                 } else if(this.tasks.includes(element)){
                     alert('You already added this task!!');
